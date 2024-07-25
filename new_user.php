@@ -11,7 +11,7 @@ $user = test_input($_POST['user']);
 $pwd = test_input($_POST['pwd']);
 $pwd_ver = test_input($_POST['repeat']);
 
-if (
+if (  
         (strlen($user) < 5) ||
         (strlen($pwd) < 8) ||
         (!preg_match('/[a-z]/', $pwd) || !preg_match('/[A-Z]/', $pwd) || !preg_match('/[^\w]/', $pwd) || !preg_match('/[0-9]/', $pwd)) ||
